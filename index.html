@@ -15,7 +15,7 @@
     <p>This is by far the most cringe thing i've done</p>
     <p>But I thought it would do</p>
     <button onclick="togglePoem" id="butt">Reveal</button>
-    <div id="poem" display="none">
+    <div id="poem" style="display:none;">
       <p>I want you to know</p>
       <p>That every one of my solutions is dedicated to you</p>
       <p>and that all my derivatives make me think of you too</p>
@@ -30,7 +30,6 @@
     <script>
       let sec = document.getElementById("poem");
       let butt = document.getElementById("butt");
-      sec.set.display = "none";
       function togglePoem() {
         sec.style.display = "block";
         butt.style.display = "none";
