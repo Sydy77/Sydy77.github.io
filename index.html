@@ -26,11 +26,11 @@
       <p>So will you declare in the land of the free</p>
       <p>If you will go to prom with me?</p>
       <p>
-        <button id="yes">Yes</button><button id="no">No</button>
+        <button id="yes" onclick="toggleYes()">Yes</button><button id="no" onclick="toggleNo()">No</button>
       </p>
       <div id="answers">
-        <p id="nopara">Wowwwww, so predictable 🙄, way to make me sad 😢</p>
-        <div id="yespara">
+        <p id="nopara" style="display:none;">Wowwwww, so predictable 🙄, way to make me sad 😢</p>
+        <div id="yespara" style="display:none;">
           <p>I LOVE U SO MUCHHHH 💘💘💘💘💘💖💖💖💖💖</p>
           <p>Ik i've done this before, but I picked this one for u too btw:</p>
           <img src="Screenshot 2024-04-05 115850.png">
@@ -42,9 +42,19 @@
     <script>
       let sec = document.getElementById("poem");
       let butt = document.getElementById("butt");
+      let yespara = document.getElementById("yespara");
+      let nopara = document.getElementById("nopara");
       function togglePoem() {
         sec.style.visibility = "visible";
         butt.style.visibility = "hidden";
+      }
+      function toggleYes() {
+        nopara.style.display = "none";
+        yespara.style.display = "block";
+      }
+      function toggleNo() {
+        nopara.style.display = "block";
+        yespara.style.display = "none";
       }
     </script>
   </body>
