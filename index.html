@@ -14,8 +14,8 @@
     <p>With one of these poems or two</p>
     <p>This is by far the most cringe thing i've done</p>
     <p>But I thought it would do</p>
-    <button onclick="togglePoem" id="butt">Reveal</button>
-    <div id="poem" style="display:none;">
+    <button onclick="togglePoem()" id="butt">Reveal</button>
+    <div id="poem" style="visibility: hidden;">
       <p>I want you to know</p>
       <p>That every one of my solutions is dedicated to you</p>
       <p>and that all my derivatives make me think of you too</p>
@@ -31,7 +31,7 @@
       let sec = document.getElementById("poem");
       let butt = document.getElementById("butt");
       function togglePoem() {
-        sec.style.display = "block";
+        sec.style.visibility = "visible";
         butt.style.display = "none";
       }
     </script>
